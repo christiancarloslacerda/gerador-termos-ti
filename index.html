@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto</title>
+</head>
+<body>
+    <form action="processo.php" method="post">
+        <table border="1" align="center">
+
+            <tr>
+                <td>Nome do Colaborador</td>
+                <td><input type="text" name="nomeColaborador"></td>
+         </tr>
+            <tr>
+                <td>Departamento</td>
+                <td>
+                    <select name="departamento">
+                    <option value="">Selecione</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="diretoria">Diretoria</option>
+                    <option value="operacional">Operacional</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Equipamento Principal</td>
+                <td>
+                    <input type="radio" name="equipamentoPrincipal" value="notebook" />Notebook
+                    <input type="radio" name="equipamentoPrincipal" value="desktop" />Desktop
+                    <input type="radio" name="equipamentoPrincipal" value="smartphone" />Smartphone
+                </td>
+            </tr>
+            <tr>
+                <td>Acessórios Inclusos</td>
+                <td><input type="checkbox" name="acessoriosInclusos[]" value="mouse" />Mouse
+                    <input type="checkbox" name="acessoriosInclusos[]" value="teclado" />Teclado
+                    <input type="checkbox" name="acessoriosInclusos[]" value="fonedeouvido" />Fone de Ouvido
+                    <input type="checkbox" name="acessoriosInclusos[]" value="capadeprotecao" />Capa de Proteção
+                </td>
+            </tr>
+            <tr>
+                <td>Codigo de Patrimônio</td>
+                <td><input type="number" name="codigoPatrimonio"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
